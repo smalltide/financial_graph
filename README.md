@@ -1,7 +1,7 @@
 # financial_graph
 use python3, bokeh and pandas_datareader to create web base Financial Graph and deploy to heroku
 
-![alt text](https://github.com/smalltide/financial_graph/blob/master/screenshot.png "financial_graph")
+![alt text](https://github.com/smalltide/financial_graph/blob/master/screenshot.gif "financial_graph")
 
 1. python3
 2. bokeh
