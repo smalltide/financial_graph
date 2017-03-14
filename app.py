@@ -42,5 +42,5 @@ script1, div1 = components(p)
 cdn_js = CDN.js_files
 cdn_css = CDN.css_files
 
-#output_file("cs.html")
-#show(p)
+output_file("cs.html")
+show(p)
