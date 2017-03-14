@@ -36,4 +36,8 @@ if deploy to Heroku
   > venv/bin/pip3 freeze > requirements.txt
   > echo "web: gunicorn web:app" > Procfile
   > echo "python-3.6.0" > runtime.txt
+  > heroku login
+  > heroku create web-financia
+  > heroku git:remote -a web-financia
+  > git push heroku master
 ```
