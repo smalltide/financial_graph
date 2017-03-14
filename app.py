@@ -1,6 +1,8 @@
 from pandas_datareader import data
 import datetime
 from bokeh.plotting import figure, show, output_file
+from bokeh.embed import components
+from bokeh.resources import CDN
 
 def inc_dec(c, o):
     if c > o:
@@ -36,6 +38,9 @@ p.rect(df.index[df.Status == "Increase"], df.Middle[df.Status == "Increase"],
 p.rect(df.index[df.Status == "Decrease"], df.Middle[df.Status == "Decrease"],
        hours_12, df.Height[df.Status == "Decrease"], fill_color = "#FF3333", line_color = "black")
 
+script1, div1 = components(p)
+cdn_js = CDN.js_files
+cdn_css = CDN.css_files
 
-output_file("cs.html")
-show(p)
+#output_file("cs.html")
+#show(p)
