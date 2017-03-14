@@ -8,6 +8,7 @@ use python3, bokeh and beautifulsoup to create web base Financial Graph
 2. beautifulsoup
 3. requests
 4. pandas
+5. pandas_datareader
 
 ```
   > git@github.com:smalltide/financial_graph.git
@@ -15,5 +16,6 @@ use python3, bokeh and beautifulsoup to create web base Financial Graph
   > pip3 install bokeh
   > pip3 install bs4
   > pip3 install pandas
+  > pip3 install pandas_datareader
   > python3 app.py
 ```
