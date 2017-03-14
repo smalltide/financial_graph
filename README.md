@@ -29,3 +29,11 @@ if need virtualenv and deploy to Heroku
   > venv/bin/pip3 install flask
   > venv/bin/python3 web.py
 ```
+
+if deploy to Heroku
+```
+  > venv/bin/pip3 install gunicorn
+  > venv/bin/pip3 freeze > requirements.txt
+  > echo "web: gunicorn web:app" > Procfile
+  > echo "python-3.6.0" > runtime.txt
+```
